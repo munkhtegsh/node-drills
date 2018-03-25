@@ -2,7 +2,7 @@
   "name": "node-drills",
   "version": "1.0.0",
   "description": "Each standalone app below builds on the previous app(s). The instructions given are only for the current app, with the assumption that you don't need repeat instructions for the previous steps.",
-  "main": "app8-middleware/index.js",
+  "main": "app9-middleware2/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,14 @@
 {
     "extends": "airbnb",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
     "rules": {
-        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }]
+        "no-unused-vars": ["error", { "vars": "local", "args": "none", "ignoreRestSiblings": true }],
+        "arrow-parens": [1, "as-needed", { "requireForBlockBody": true }]
     }
 }

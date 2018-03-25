@@ -6,6 +6,7 @@ const session = require('express-session');
 const port = 3000;
 const app = express();
 
+
 app.use(bodyParser.json());
 
 app.use(session({
@@ -15,7 +16,6 @@ app.use(session({
 }));
 
 app.post('/api/data', (req, res, next) => {
-  console.log(req.session)
   if (!req.session.user) {
     req.session.user = [];
   }
