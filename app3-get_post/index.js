@@ -5,10 +5,15 @@ var port = 3000;
 var app = express();
 app.use(bodyParser.json());
 
+app.get('/api/items', (req, res) => {
+	res.status(200).send(items);
+});
 
-
-
-
+app.post('/api/items', (req, res) => {
+	let { item } = req.body;
+	items.push(item)
+	res.status(200).send(items);
+});
 
 app.listen(port, function() {
 	console.log('Listening on port',port);
